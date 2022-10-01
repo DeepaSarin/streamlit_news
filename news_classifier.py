@@ -17,12 +17,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 pickle_in = open("news_classifier.pkl","rb")
 classifier = pickle.load(pickle_in)
+pickle_vect = open("tfidf_vect.pkl","rb")
+tf_vect = pickle.load(pickle_vect)
 
 def predict_news_category(News,classifier):
     #Tfidf_vect = TfidfVectorizer(max_features=5000)
     #Tfidf_vect.fit([News])
-    News=[News]
-    News_tr=TfidfVectorizer.transform(News)
+    
+    News_tr=tf_vect.transform(News)
     prediction=((classifier.predict(News_tr))[0])
     print(prediction)
     return prediction  

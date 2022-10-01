@@ -22,7 +22,7 @@ Original file is located at
 # # Install `tokenizers` in the current virtual env
 # pip install setuptools_rust
 # python setup.py install
-import sklearn
+#import sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
 #from sklearn import preprocessing
 #from tokenizers import Tokenizer

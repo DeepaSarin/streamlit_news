@@ -38,6 +38,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import pickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 # import warnings
 # warnings.filterwarnings("ignore")
 # from PIL import Image

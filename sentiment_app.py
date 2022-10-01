@@ -23,7 +23,7 @@ def predict_news_sentiment(News,classifier):
     
 def Input_Output():
     st.title("News Sentiment Analysis")
-    st.image("https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg", width=200)
+    st.image("https://www.freecodecamp.org/news/content/images/size/w2000/2020/09/wall-5.jpeg", width=200)
     
     
     st.markdown("A value for News Sentiment will be predicted using Random Forest Regressor (-1 being highly negative, +1 being highly positive and 0 a neutral News ",unsafe_allow_html=True)

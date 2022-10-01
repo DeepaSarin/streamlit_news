@@ -34,7 +34,7 @@ def Input_Output():
     st.image("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F80%2F0d%2F23%2F800d23c71a4fa03a3280402193978a8d--latest-jokes-website-software.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Ftechcruiser%2F&tbnid=tIL3MKDaEsrwoM&vet=12ahUKEwiWg5X9kL36AhUOktgFHWaMA74QMyghegUIARCvAg..i&docid=vDjLB-YVZRL1OM&w=351&h=199&q=online%20news%20images&ved=2ahUKEwiWg5X9kL36AhUOktgFHWaMA74QMyghegUIARCvAg", width=600)
     
     st.markdown("You are using Streamlit...",unsafe_allow_html=True)
-    st.markdown("Coal,Petroleum,Agriculture...",unsafe_allow_html=True)
+    st.markdown("Coal,Petroleum,Agriculture,Construction,Steel and Iron and Maritime are the categories inclueded in training the model",unsafe_allow_html=True)
                 
     news  = [st.text_input("Enter News to be classified " , " ")]
     

@@ -44,7 +44,7 @@ def Input_Output():
     if st.button("Click here to Predict"):
         result = predict_news_category(news,classifier)
         st.balloons()
-    result=result+1    
+    result=int(result)+1    
     if result==0 :
        result='agriculture' 
     elif result==1 :

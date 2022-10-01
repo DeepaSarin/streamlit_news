@@ -36,7 +36,7 @@ def Input_Output():
     st.markdown("You are using Streamlit...",unsafe_allow_html=True)
     st.markdown("Coal,Petroleum,Agriculture...",unsafe_allow_html=True)
                 
-    news  = st.text_input("Enter News to be classified " , " ")
+    news  = [st.text_input("Enter News to be classified " , " ")]
     
     
     

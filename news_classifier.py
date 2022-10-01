@@ -29,7 +29,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 #!pip install --upgrade pip
 
 #!pip install rust
-! pip install streamlit
+#! pip install streamlit
 
 import pandas as pd
 import streamlit as st

@@ -45,17 +45,17 @@ def Input_Output():
         result = predict_news_category(news,classifier)
         st.balloons()
     
-    if result=='0':
+    if result==0:
        result='agriculture' 
-    elif result==2 :
+    elif result==1 :
        result='coal'
-    elif result==3 :
+    elif result==2 :
        result='construction'
-    elif result==4:
+    elif result==3:
         result='fertilizer'
-    elif result==5 :
+    elif result==4 :
        result='iron ore and steel'        
-    elif result==6 :
+    elif result==5 :
        result='maritime'
     else :
        result='petroleum'

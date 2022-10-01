@@ -33,7 +33,7 @@ def Input_Output():
     
     
     
-    result = ""
+    result = 0
     if st.button("Click here to Predict"):
         result = predict_news_sentiment(news,classifier)
         st.balloons()

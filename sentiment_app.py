@@ -39,7 +39,12 @@ def Input_Output():
         st.balloons()
     
     
-    st.success('The Sentiment Predicted for this News Article is {}'.format(result))
-   
+    st.success('The Sentiment Score Predicted for this News Article is {}'.format(result))
+    if result >0 :
+        st.markdown("This is a Positive News")
+    elif result == 0:
+        st.markdown("This is a neutral News")
+    else:
+        st.markdown("This is a Negative News")
 if __name__ ==  '__main__':
     Input_Output()

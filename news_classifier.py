@@ -37,7 +37,7 @@ Original file is located at
 import pandas as pd
 import streamlit as st
 import numpy as np
-# import pickle
+import pickle
 # import warnings
 # warnings.filterwarnings("ignore")
 # from PIL import Image

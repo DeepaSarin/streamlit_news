@@ -14,6 +14,7 @@ Original file is located at
     https://colab.research.google.com/drive/13kg-I6ZqBeH8Zm4QFyHninb9-zcMfJko
 """
 #pip install sklearn
+python -m pip install scikit-learn
 import sklearn
 #! pip install transformers==2.4.1
 # Install with:

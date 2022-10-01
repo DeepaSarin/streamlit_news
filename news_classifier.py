@@ -31,7 +31,7 @@ def predict_news_category(News,classifier):
     
 def Input_Output():
     st.title("News Category Prediction")
-    st.image("https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg", width=600)
+    st.image("https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg", width=200)
     
     st.markdown("You are using Streamlit...",unsafe_allow_html=True)
     st.markdown("Coal,Petroleum,Agriculture,Construction,Steel and Iron and Maritime are the categories inclueded in training the model",unsafe_allow_html=True)

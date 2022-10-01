@@ -59,7 +59,7 @@ def Input_Output():
        result='maritime'
     else :
        result='petroleum'
-    result=result+1
+    
     st.success('The output is {}'.format(result))
    
 if __name__ ==  '__main__':

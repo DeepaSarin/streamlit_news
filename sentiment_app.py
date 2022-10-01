@@ -37,7 +37,7 @@ def Input_Output():
         st.balloons()
     
     
-    st.write('The Sentiment Score Predicted for this Review Article is ',result)
+    
     if result >0 :
         st.markdown("This is a Positive Review")
     elif result == 0:

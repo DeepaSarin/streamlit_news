@@ -42,7 +42,7 @@ import pickle
 # warnings.filterwarnings("ignore")
 # from PIL import Image
 
-pickle_in = open(r"news_classifier.pkl","rb")
+pickle_in = open("news_classifier.pkl","rb")
 classifier = pickle.load(pickle_in)
 
 def predict_news_category(News,classifier):

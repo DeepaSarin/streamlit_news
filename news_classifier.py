@@ -44,6 +44,20 @@ def Input_Output():
     if st.button("Click here to Predict"):
         result = predict_news_category(news,classifier)
         st.balloons()     
+    if result==4 :
+       result='agriculture' 
+    elif result==1 :
+       result='coal'
+    elif result==2 :
+       result='construction'
+    elif result==3:
+        result='fertilizer'
+    elif result==4 :
+       result='iron ore and steel'        
+    elif result==5 :
+       result='maritime'
+    else result='petroleum'
+    
     st.success('The output is {}'.format(result))
    
 if __name__ ==  '__main__':

@@ -22,29 +22,27 @@ def predict_news_sentiment(News,classifier):
     return prediction  
     
 def Input_Output():
-    st.title("News Sentiment Analysis")
+    st.title("Customer Sentiment Analysis")
     st.image("https://www.freecodecamp.org/news/content/images/size/w2000/2020/09/wall-5.jpeg", width=200)
     
     
-    st.markdown("A value for News Sentiment will be predicted using Random Forest Regressor (-1 being highly negative, +1 being highly positive and 0 a neutral News ",unsafe_allow_html=True)
+    st.markdown("A value for Customer Sentiment will be predicted using Random Forest Regressor (-1 being highly negative, +1 being highly positive and 0 a neutral News ",unsafe_allow_html=True)
     st.markdown("Use Cases for Sentiment Analysis include :1.Customer Satisfaction Analysis 2.Analyse Customer Service Issues 3.Plan Product Improvements to name a few ",unsafe_allow_html=True)
                 
-    news  = [st.text_input("Enter News to be analyzed for Sentiment " , " ")]
-    
-    
-    
-    result = 0
+    news  = [st.text_input("Enter Customer Review to be analyzed for Sentiment " , " ")]
+           
+    result = 0.0
     if st.button("Click here to Predict"):
-        result = predict_news_sentiment(news,classifier)
+        result =float( predict_news_sentiment(news,classifier))
         st.balloons()
     
     
     st.success('The Sentiment Score Predicted for this News Article is {}'.format(result))
     if result >0 :
-        st.markdown("This is a Positive News")
+        st.markdown("This is a Positive Review")
     elif result == 0:
-        st.markdown("This is a neutral News")
+        st.markdown("This is a neutral Review")
     else:
-        st.markdown("This is a Negative News")
+        st.markdown("This is a Negative Review")
 if __name__ ==  '__main__':
     Input_Output()

@@ -62,6 +62,7 @@ def Input_Output():
     st.markdown("Coal,Petroleum,Agriculture...",unsafe_allow_html=True)
                 
     news  = st.text_input("Enter News to be classified " , ".")
+    news=[news]
     
     result = ""
     if st.button("Click here to Predict"):

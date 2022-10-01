@@ -57,7 +57,7 @@ def Input_Output():
     elif result==5 :
        result='maritime'
     else :
-    result='petroleum'
+       result='petroleum'
     
     st.success('The output is {}'.format(result))
    

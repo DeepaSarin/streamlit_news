@@ -38,7 +38,7 @@ def Input_Output():
     
     
     
-    if result >0 :
+    if result > 0 :
         st.markdown("This is a Positive Review")
     elif result == 0:
         st.markdown("This is a neutral Review")
